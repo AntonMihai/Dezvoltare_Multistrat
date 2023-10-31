@@ -94,7 +94,7 @@ public void setAdresa(String adresa)
         super();
     }
     public String toString() {
-        return "\n\t\tAngajat [id=" + angajatId + ", name=" + numeAngajat +"]";
+        return "\n\t\tAngajat  [id=" + angajatId + ", name=" + numeAngajat +"]";
     }
 }
 
