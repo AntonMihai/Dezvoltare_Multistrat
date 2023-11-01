@@ -2,7 +2,7 @@ package org.scrum.domain.project;
 
 public class Evaluare implements Comparable<Evaluare>{
     private Integer evaluareId;
-    private enum TipEvaluare {
+    public enum TipEvaluare {
         TestTeoretic, TestPractic, Interviu
     }
     private Evaluare.TipEvaluare tipEvaluare;
@@ -51,6 +51,6 @@ public class Evaluare implements Comparable<Evaluare>{
         super();
     }
     public String toString() {
-        return "\n\t\tEvaluare [id=" + evaluareId + ", descriere evaluare=" + descriereEvaluare +"]";
+        return "\n\t\tEvaluare  [id=" + evaluareId + ", descriere evaluare=" + descriereEvaluare +"]";
     }
 }

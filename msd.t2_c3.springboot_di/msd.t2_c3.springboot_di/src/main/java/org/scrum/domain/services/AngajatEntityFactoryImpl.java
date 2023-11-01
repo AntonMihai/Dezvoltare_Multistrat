@@ -31,6 +31,8 @@ public class AngajatEntityFactoryImpl  implements IAngajatEntityFactory{
     {
         Integer nextID = this.entityRepository.getNextID();
     Angajat newAngajat= new Angajat(nextID,numeAngajat);
+
+
         logger.info("NEW angajat "+newAngajat.getAngajatId()+")"+newAngajat.getNumeAngajat());
         return newAngajat;
     }
@@ -38,6 +40,7 @@ public class AngajatEntityFactoryImpl  implements IAngajatEntityFactory{
     private void initDomainServiceEntities() {
         logger.info(">> PostConstruct :: initDomainServiceEntities");
         entityRepository.add(buildAngajat("Covor Marcel:"));
+
 
 
         logger.info(">> EntityRepository angajat count :: " + entityRepository.size());
